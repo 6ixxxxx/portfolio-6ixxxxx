@@ -24,10 +24,10 @@ const Navbar = () => {
         <div className={color ? "header header-bg" : "header"}>
             <Link to="/">
                 <h1>
-                    <FaLessThan size={20} />
+                    <FaLessThan size={15} />
                     Portfolio-6ixxxxx
-                    <BsSlashLg size={20} />
-                    <FaGreaterThan size={20} />
+                    <BsSlashLg size={15} />
+                    <FaGreaterThan size={15} />
                 </h1>
             </Link>
             <ul className={click ? "nav-menu active":"nav-menu"}>
