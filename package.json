@@ -1,5 +1,5 @@
 {
-  "homepage":"https://6ixxxxx.github.io/portfolio-6ixxxxx",
+  "homepage": "https://6ixxxxx.github.io/portfolio-6ixxxxx",
   "name": "portfolio-6ixxxxx",
   "version": "0.1.0",
   "private": "false",
@@ -7,6 +7,7 @@
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
+    "emailjs-com": "^3.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
