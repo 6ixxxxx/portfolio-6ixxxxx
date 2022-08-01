@@ -8,7 +8,7 @@ const HomeImg = () => {
         <div className="hero">
             <div className="mask">
                 <img className="intro-img" 
-                src={IntroImg} alt="Intro-Image"/>
+                src={IntroImg} />
             </div>
             <div className="content">
                 <p>Hi, I'm Francis Onyenwe</p>

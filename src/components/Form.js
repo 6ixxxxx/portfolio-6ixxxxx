@@ -1,14 +1,18 @@
 import "./FormStyles.css"
 import emailjs from "emailjs-com";
+import {useForm} from "react-hook-form"
 import React, { useRef } from "react";
 
 
 const Form = () => {
 
+  const { register, handleSubmit,
+    formState: { errors }
+  } = useForm();
+
   const form = useRef();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+  const sendEmail = (data, e) => {
 
     emailjs.sendForm(
       'service_oj4ikbh', 
@@ -17,8 +21,8 @@ const Form = () => {
       'Ew23-Nbt6g-NbxDJ-')
       .then((result) => {
           console.log(result.text);
-          alert("Message Sent!")
           e.target.reset();
+          alert("Message Sent!")
       }, (error) => {
           console.log(error.text);
       });
@@ -27,16 +31,22 @@ const Form = () => {
 
   return (
     <div className="form">
-        <form ref={form} onSubmit={sendEmail}>
+        <form ref={form} onSubmit={handleSubmit(sendEmail)}>
             <label>Your Name</label>
-            <input type="text" name="user_name"></input>
+            <input type="text" name="user_name"
+            {...register("user_name", {required: "Required"})}
+            ></input>
             
             <label>Email</label>
-            <input type="email" name="user_email"></input>
+            <input type="email" name="user_email"
+            {...register("email", {required: "Required"})}
+            ></input>
 
             <label>Message</label>
             <textarea rows="6" name="message"
-            placeholder="Type Your Message Here" />
+            placeholder="Type Your Message Here" 
+            {...register("message", {required: "Required"})}
+            />
 
             <button className="btn" type="submit"
             value="Send" >Submit</button>
