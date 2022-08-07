@@ -1,6 +1,6 @@
 import project01 from "../assets/project01.png"
 import project2 from "../assets/project2.png"
-import project1 from "../assets/project1.jpg"
+import project3 from "../assets/project3.png"
 
 const ProjectsCardData = [
     {
@@ -18,11 +18,11 @@ const ProjectsCardData = [
         source: "https://github.com/6ixxxxx/movie_app_react"
     },
     {
-        imgsrc: project1,
-        title: "Loading",
-        text: "Loading...",
-        view: "./",
-        source: "./"
+        imgsrc: project3,
+        title: "React Meme Generator",
+        text: "Create your very own meme",
+        view: "https://6ixxxxx.github.io/react-meme-generator/",
+        source: "https://github.com/6ixxxxx/react-meme-generator"
     },
 ]
 
