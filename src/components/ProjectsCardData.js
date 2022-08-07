@@ -12,7 +12,7 @@ const ProjectsCardData = [
     },
     {
         imgsrc: project2,
-        title: "Movies Website",
+        title: "Netflix Clone: Movies Website",
         text: "Search for any movie you want",
         view: "https://6ixxxxx.github.io/movie_app_react/",
         source: "https://github.com/6ixxxxx/movie_app_react"
