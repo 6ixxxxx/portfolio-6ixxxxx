@@ -12,7 +12,7 @@ const AboutContent = () => {
             <p>I'm a React developer. <br/> I create smooth, 
              fast responsive websites for my clients.</p> 
              <p>
-             I have over 1 year experience with Wordpress development.<br/>
+             I have over 2 years of experience with Wordpress development.<br/>
              I decided to switch to React in 2022 in order to have more 
              control of my tools and environment. </p> 
              <p>
