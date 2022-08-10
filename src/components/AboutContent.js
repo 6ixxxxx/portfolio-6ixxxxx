@@ -14,8 +14,10 @@ const AboutContent = () => {
     }, [])    
   return (
     <section className="about" id="about">
-        <div className="left" data-aos="slide-up">
+        <div className="left" >
             <h1>Who am I?</h1>
+          <div data-aos="slide-up">
+
             <p>I'm a React developer. <br/> I create smooth, 
              fast responsive websites for my clients.</p> 
              <p>
@@ -27,10 +29,11 @@ const AboutContent = () => {
              </p>
 
             <HashLink  to="#contact"    
-                    spy={true} smooth={true}
+                    spy={true} smooth={true} offset={-150} duration={500}
                     >
                 <button className="btn">Contact</button>
             </HashLink>
+           </div>
         </div>
 
         <div className="right">

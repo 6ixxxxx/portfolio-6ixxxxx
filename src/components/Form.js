@@ -38,9 +38,9 @@ const Form = () => {
 
 
   return (
-    <div className="form" id="contact" data-aos="slide-left">
+    <div className="form" id="contact" >
       <h1>Reach Me</h1>
-        <form ref={form} onSubmit={handleSubmit(sendEmail)}>
+        <form ref={form} onSubmit={handleSubmit(sendEmail)} data-aos="slide-up">
             <label>Your Name</label>
             <input type="text" name="user_name"
             {...register("user_name", {required: "Required"})}
