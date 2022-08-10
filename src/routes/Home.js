@@ -7,6 +7,7 @@ import MyProjects from '../components/MyProjects'
 import Footer from '../components/Footer'
 
 const Home = () => {
+  
   return (
     <div>
         <Navbar />

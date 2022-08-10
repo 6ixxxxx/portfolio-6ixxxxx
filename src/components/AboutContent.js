@@ -1,13 +1,20 @@
 import "./AboutContentStyles.css";
 import reactjs from "../assets/reactjs.jpg"
 import dev from "../assets/dev.jpg"
-import React from 'react'
-import { Link } from "react-router-dom";
+import React, { useEffect } from 'react'
+import Aos from "aos"
+import "aos/dist/aos.css"
+import { HashLink } from "react-router-hash-link";
+import { Link } from "react-scroll";;
 
 const AboutContent = () => {
+
+    useEffect(()=>{
+        Aos.init({duration: 2000})
+    }, [])    
   return (
-    <div className="about">
-        <div className="left">
+    <section className="about" id="about">
+        <div className="left" data-aos="slide-up">
             <h1>Who am I?</h1>
             <p>I'm a React developer. <br/> I create smooth, 
              fast responsive websites for my clients.</p> 
@@ -19,24 +26,26 @@ const AboutContent = () => {
              I also have basic control of Photoshop and figma.
              </p>
 
-            <Link  to="../contact">
+            <HashLink  to="#contact"    
+                    spy={true} smooth={true}
+                    >
                 <button className="btn">Contact</button>
-            </Link>
+            </HashLink>
         </div>
 
         <div className="right">
-            <div className="img-container">
-                <div className="img-stack top">
+            <div className="img-container" >
+                <div className="img-stack top" data-aos="fade-right">
                     <img src={dev} className="img" 
-                    alt="skillstack" />
+                    alt="me at a party" />
                 </div>
-                <div className="img-stack bottom">
+                <div className="img-stack bottom" data-aos="fade-left">
                     <img src={reactjs} className="img" 
                     alt="skillstack" />
                 </div>
             </div>
         </div>
-    </div>
+    </section>
   )
 }
 

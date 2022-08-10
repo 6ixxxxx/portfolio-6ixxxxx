@@ -5,7 +5,7 @@ import ProjectsCardData from "./ProjectsCardData"
 
 const Projects = () =>{
     return(
-        <div className="work-container">
+        <section className="work-container" id="projects">
             <h1 className="project-heading" >Projects</h1>
             <div className="project-container">
                 {ProjectsCardData.map((val, ind) => {
@@ -21,7 +21,7 @@ const Projects = () =>{
                     )
                 })}
             </div>
-        </div>
+        </section>
     )
 }
 

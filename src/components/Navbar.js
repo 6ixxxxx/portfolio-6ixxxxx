@@ -1,13 +1,15 @@
 import React, {useState} from "react";
 import "./NavbarStyles.css";
-import {Link} from "react-router-dom";
 import {FaBars, FaTimes, FaGreaterThan, FaLessThan } from "react-icons/fa";
 import {BsSlashLg} from "react-icons/bs";
+import { HashLink} from "react-router-hash-link";
+import { Link } from "react-scroll";
 
 
 const Navbar = () => {
     const [click, setClick] = useState(false);
     const handleClick = () => setClick(!click);
+    const homeClick = () => setClick(false);
 
     const [color, setColor] = useState(false);
     const changeColor = () => {
@@ -22,26 +24,36 @@ const Navbar = () => {
 
     return(
         <div className={color ? "header header-bg" : "header"}>
-            <Link to="/">
+            <HashLink to="#"    
+                    spy={true} smooth={true} offset={50} duration={500}
+                    onClick={homeClick}>
                 <h1>
                     <FaLessThan size={15} />
                     Portfolio-6ixxxxx
                     <BsSlashLg size={15} />
                     <FaGreaterThan size={15} />
                 </h1>
-            </Link>
+            </HashLink>
             <ul className={click ? "nav-menu active":"nav-menu"}>
                 <li>
-                    <Link to="/">Home</Link>
+                    <HashLink to="#"    
+                    spy={true} smooth={true} offset={50} duration={500}
+                    onClick={handleClick}>Home</HashLink>
                 </li>
                 <li>
-                    <Link to="/about">About</Link>
+                    <HashLink to="#about"  
+                    spy={true} smooth={true} offset={-200} duration={500}
+                    onClick={handleClick}>About</HashLink>
                 </li>
                 <li>
-                    <Link to="/projects">Projects</Link>
+                    <HashLink to="#projects"   
+                    spy={true} smooth={true} offset={50} duration={500}
+                     onClick={handleClick}>Projects</HashLink>
                 </li>
                 <li>
-                    <Link to="/contact">Contact</Link>
+                    <HashLink to="#contact"    
+                    spy={true} smooth={true} offset={50} duration={500}
+                    onClick={handleClick}>Contact</HashLink>
                 </li>
             </ul>
             <div className="hamburger" onClick={handleClick}>
