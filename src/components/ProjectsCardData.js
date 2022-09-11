@@ -7,7 +7,7 @@ import travelJournal from "../assets/travelJournal.png"
 const ProjectsCardData = [
     {
         imgsrc: AgObum,
-        title: "AG Obum's Portfolio Website",
+        title: "AG Obum's Photography Website",
         tools: "React.js, Next.js",
         text: "I Built this with React.js and Migrated it to Next.js for better SEO accessibility, I also implemented Dark mode feature.",
         view: "https://ag-obum.vercel.app/",
