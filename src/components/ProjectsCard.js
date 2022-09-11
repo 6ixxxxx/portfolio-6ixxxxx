@@ -13,6 +13,7 @@ const ProjectsCard = (props) =>{
             <img src={props.imgsrc} alt="" />
             <h2 className="project-title">{props.title}</h2>
             <div className="pro-details">
+                <h4>{props.tools}</h4>
                 <p>{props.text}</p>
                 <div className="pro-btns">
                     <a href={props.view}
