@@ -1,4 +1,5 @@
 import AgObum from "../assets/Ag-obum.png"
+import LearnIt from "../assets/LearnIt.png"
 import portfolio from "../assets/portfolio.png"
 import movies from "../assets/movies.png"
 import memeGen from "../assets/memeGen.png"
@@ -12,6 +13,14 @@ const ProjectsCardData = [
         text: "I Built this with React.js and Migrated it to Next.js for better SEO accessibility, I also implemented Dark mode feature.",
         view: "https://ag-obum.vercel.app/",
         source: "https://github.com/6ixxxxx/ag_obum"
+    },
+    {
+        imgsrc: LearnIt,
+        title: "Learn-It Tutorial Website",
+        tools: "React.js, TailwindCss",
+        text: "Multi Page website for a Tutorial org",
+        view: "https://learn-it-web.vercel.app//",
+        source: "https://github.com/6ixxxxx/Learn-it-web"
     },
     {
         imgsrc: portfolio,
