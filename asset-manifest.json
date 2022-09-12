@@ -1,20 +1,22 @@
 {
   "files": {
-    "main.css": "/portfolio-6ixxxxx/static/css/main.1ac2d293.css",
-    "main.js": "/portfolio-6ixxxxx/static/js/main.8e0ea5f8.js",
+    "main.css": "/portfolio-6ixxxxx/static/css/main.32ab67eb.css",
+    "main.js": "/portfolio-6ixxxxx/static/js/main.b3466cd8.js",
     "static/media/intro-bg.jpg": "/portfolio-6ixxxxx/static/media/intro-bg.05939f1dd13f439fc029.jpg",
     "static/media/reactjs.jpg": "/portfolio-6ixxxxx/static/media/reactjs.8fcc216cd1cf37d7467e.jpg",
     "static/media/portfolio.png": "/portfolio-6ixxxxx/static/media/portfolio.e387141b036a3f25ad81.png",
+    "static/media/Ag-obum.png": "/portfolio-6ixxxxx/static/media/Ag-obum.27a78dc530a507ee1943.png",
     "static/media/memeGen.png": "/portfolio-6ixxxxx/static/media/memeGen.2ff790548e6c3daadfcb.png",
     "static/media/travelJournal.png": "/portfolio-6ixxxxx/static/media/travelJournal.2ae2ddc3ebfb23ead31d.png",
+    "static/media/LearnIt.png": "/portfolio-6ixxxxx/static/media/LearnIt.a5d2bce89cac7ff5e0bf.png",
     "static/media/dev.jpg": "/portfolio-6ixxxxx/static/media/dev.8f42cdf8aabed3ca379e.jpg",
     "static/media/movies.png": "/portfolio-6ixxxxx/static/media/movies.7e94e53a8201f002d233.png",
     "index.html": "/portfolio-6ixxxxx/index.html",
-    "main.1ac2d293.css.map": "/portfolio-6ixxxxx/static/css/main.1ac2d293.css.map",
-    "main.8e0ea5f8.js.map": "/portfolio-6ixxxxx/static/js/main.8e0ea5f8.js.map"
+    "main.32ab67eb.css.map": "/portfolio-6ixxxxx/static/css/main.32ab67eb.css.map",
+    "main.b3466cd8.js.map": "/portfolio-6ixxxxx/static/js/main.b3466cd8.js.map"
   },
   "entrypoints": [
-    "static/css/main.1ac2d293.css",
-    "static/js/main.8e0ea5f8.js"
+    "static/css/main.32ab67eb.css",
+    "static/js/main.b3466cd8.js"
   ]
 }
