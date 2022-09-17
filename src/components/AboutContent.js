@@ -42,7 +42,7 @@ const AboutContent = () => {
                     <img src={dev} className="img" 
                     alt="me at a party" />
                 </div>
-                <div className="img-stack bottom" data-aos="fade-left">
+                <div className="img-stack bottom" data-aos="fade-down">
                     <img src={reactjs} className="img" 
                     alt="skillstack" />
                 </div>
